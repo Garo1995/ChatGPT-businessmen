@@ -243,7 +243,6 @@ p{
 
 
 
-
 .global-title{
     gap: 20px;
 }
@@ -257,7 +256,7 @@ p{
     font-size: 16px;
     line-height: 22px;
     position: relative;
-    bottom: 13px;
+    bottom: 8px;
 }
 .global-title-name p{
     margin-top: 20px;
@@ -1036,18 +1035,53 @@ p{
     position: relative;
     cursor: pointer;
     background: #1C1C1C;
-
+    border: 1px solid #1C1C1C;
 }
+.open-accordion:hover{
+    border: 1px solid #0C2591;
+    background: unset;
+}
+
+.open .open-accordion{
+    border: 1px solid #0C2591;
+    background: unset;
+}
+
 
 .open-accordion:before{
-    content: url("../img/icon/plus.svg");
-    height: 24px;
-    width: 24px;
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 18px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 5px;
     transition: 0.3s;
-    position: relative;
-    z-index: 2;
 }
+.open-accordion:after{
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+
+.open-accordion:hover:before, .open-accordion:hover:after{
+    background: #0C2591;
+}
+
+
+
+.open .open-accordion:before, .open .open-accordion:after{
+    background: #0C2591;
+}
+
 .open .open-accordion:before{
+    transform: rotate(45deg);
+}
+.open .open-accordion:after{
     transform: rotate(45deg);
 }
 .submenu{
