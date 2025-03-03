@@ -124,6 +124,7 @@ header{
         background: #FDFDFD;
         width: 100%;
         position: relative;
+        margin-bottom: -1px;
     }
     .menu-name-mob:after{
         content: "";

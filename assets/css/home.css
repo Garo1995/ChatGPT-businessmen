@@ -113,7 +113,7 @@ p{
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../img/smart-fon.png");
+    background-image: url("../img/smart-fon.webp");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 40px;
@@ -201,6 +201,9 @@ p{
     .service-cnt {
         gap: 48px;
     }
+    .smart-business-main:before {
+        border-radius: 20px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -216,7 +219,7 @@ p{
 
 @media (max-width: 500px){
     .smart-business-main:before{
-        background-image: url("../img/smart-fon-2.png");
+        background-image: url("../img/smart-fon-2.webp");
     }
     .smart-business-main {
         padding: 40px 20px 40px;
@@ -237,7 +240,9 @@ p{
     .smart-business-count + .smart-business-count p {
         text-align: center;
     }
-
+    .smart-business-main:before {
+        border-radius: 20px;
+    }
 }
 
 /*============-smart-business-style-end-==========*/
@@ -373,7 +378,7 @@ p{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../img/solution-fon.png");
+    background-image: url("../img/solution-fon.webp");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 32px;
@@ -392,6 +397,7 @@ p{
     padding: 32px;
     background: #FDFDFD;
     border-radius: 16px;
+    margin-bottom: -1px;
 }
 
 
@@ -501,7 +507,7 @@ p{
 }
 @media (max-width: 575px){
     .solution-cnt:before{
-        background-image: url("../img/solution-fon-mob.png");
+        background-image: url("../img/solution-fon-mob.webp");
     }
     .solution-icon img{
         width: 36px;
@@ -509,7 +515,9 @@ p{
     .solution-cnt {
         padding: 52px 20px;
     }
-
+    .solution-cnt:before {
+        border-radius: 20px;
+    }
 }
 
 /*============-solution-style-end-==========*/
@@ -611,13 +619,16 @@ p{
         position: relative;
         padding-bottom: 36px;
     }
-    .receive-box{
-        max-width: 330px;
+    .receive-mobile-photo {
+        max-width: 560px;
         width: 100%;
         margin: 0 auto;
     }
     .receive-slider .receive-pagination{
         bottom: 0;
+    }
+    .receive-box{
+        width: 100%;
     }
 }
 @media (max-width: 767px){
@@ -626,6 +637,7 @@ p{
         font-size: 22px;
         line-height: 28px;
     }
+
 }
 
 
@@ -653,16 +665,16 @@ p{
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../img/circle.png");
+    background-image: url("../img/circle.svg");
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .simple-effective-box:nth-child(2):before{
-    background-image: url("../img/circle-2.png");
+    background-image: url("../img/circle-2.svg");
 }
 .simple-effective-box:nth-child(3):before{
-    background-image: url("../img/circle-3.png");
+    background-image: url("../img/circle-3.svg");
 }
 
 
@@ -692,7 +704,9 @@ p{
 .simple-effective-box:nth-child(3){
     margin-left: -60px;
 }
-
+.simple-effective-main .btn-black{
+    padding: 16px 40px;
+}
 
 
 
@@ -739,9 +753,30 @@ p{
     .simple-effective-box p {
         max-width: 256px;
     }
+
+}
+@media (max-width: 420px){
     .simple-effective-box {
-        max-width: 330px;
-        height: 330px;
+        max-width: 360px;
+        height: 360px;
+    }
+}
+@media (max-width: 390px){
+    .simple-effective-box {
+        max-width: 340px;
+        height: 340px;
+    }
+}
+@media (max-width: 358px){
+    .simple-effective-box {
+        max-width: 320px;
+        height: 320px;
+    }
+}
+@media (max-width: 345px){
+    .simple-effective-box {
+        max-width: 300px;
+        height: 300px;
     }
 }
 
@@ -760,7 +795,7 @@ p{
 .average-rating{
     max-width: 387px;
     width: 100%;
-    background-image: url("../img/reviews-fon.png");
+    background-image: url("../img/reviews-fon.webp");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 38px 20px 56px;
@@ -974,17 +1009,19 @@ p{
 }
 @media (max-width: 680px){
     .reviews-cards-photo {
-        max-width: 320px;
+        max-width: 380px;
         height: 280px;
     }
     .reviews-cards-info {
-        max-width: 320px;
+        max-width: 380px;
     }
+
     .average-rating {
-        max-width: 345px;
-        background-size: contain;
+        max-width: 545px;
+        background-size: cover;
         padding: 41px 20px 43px;
         background-position: center;
+        border-radius: 20px;
     }
     .average-rating-line {
         width: 100px;
@@ -997,6 +1034,12 @@ p{
     .average-rating strong {
         font-size: 28px;
         line-height: 32px;
+    }
+    .reviews-cards-photo {
+        max-width: 400px;
+    }
+    .reviews-cards-info {
+        max-width: 400px;
     }
 }
 
